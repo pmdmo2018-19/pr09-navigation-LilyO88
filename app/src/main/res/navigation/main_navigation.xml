@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation.xml"
+    app:startDestination="@id/destMainFragment">
+
+    <fragment
+        android:id="@+id/destMainFragment"
+        android:name="es.iessaladillo.pedrojoya.pr08.ui.main.MainFragment"
+        android:label="@string/titleMainFragment"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_destMainFragment_to_destDetailFragment"
+            app:destination="@id/destDetailFragment" />
+        <action
+            android:id="@+id/action_destMainFragment_to_destSettingsFragment"
+            app:destination="@+id/destSettingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/destDetailFragment"
+        android:name="es.iessaladillo.pedrojoya.pr08.ui.detail.Detail_fragment"
+        android:label="@string/titleDetailFragment"
+        tools:layout="@layout/fragment_detail" />
+
+    <fragment
+        android:id="@+id/destSettingsFragment"
+        android:name="es.iessaladillo.pedrojoya.pr08.ui.settings.Settings_fragment"
+        android:label="@string/titleSettingsFragment"
+        tools:layout="@layout/fragment_settings"/>
+</navigation>

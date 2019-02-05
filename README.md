@@ -1,2 +1,2 @@
-# PR09-Navigation
-Práctica similar PR08-ToolbarAndPreferences-Base pero usando la librería Navigation Architecture Component
+# PR08-ToolbarAndPreferences
+Práctica acerca de diferentes formas de Toolbar y fragmentos de preferencias
